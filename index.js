@@ -11,7 +11,8 @@ buttons.map((button) => {
       // takes the current display and does math operations
       case '=':
         try {
-          result.innerText = eval(result.innerText)
+          let newResult = Function('return ' + result.innerText)()
+          result.innerText = newResult
         } catch {
           result.innerText = 'err'
         }
