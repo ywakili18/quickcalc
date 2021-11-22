@@ -1,7 +1,7 @@
 let result = document.getElementById('result')
 // Using array.from to convert collection to array
 let buttons = Array.from(document.getElementsByClassName('btn'))
-// map through each button and perform calc using .eval()
+// map through each button and perform calc using .Function()
 buttons.map((button) => {
   button.addEventListener('click', (e) => {
     switch (e.target.innerText) {
